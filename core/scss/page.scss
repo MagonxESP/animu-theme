@@ -58,4 +58,8 @@ body {
       }
     }
   }
+
+  #content-wrapper.is-gallery {
+    overflow-x: hidden;
+  }
 }
