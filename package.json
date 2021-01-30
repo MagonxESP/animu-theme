@@ -1,0 +1,17 @@
+{
+  "name": "animu-theme",
+  "version": "1.0.0",
+  "description": "Anime theme for owncloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MagonxESP",
+  "license": "MIT",
+  "devDependencies": {
+    "@magonxesp/gulpfilejs": "^1.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

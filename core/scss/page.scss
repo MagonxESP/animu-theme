@@ -1,0 +1,61 @@
+@mixin logo_background($size) {
+  content: "";
+  background-image: $logo;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: $size;
+  height: $size;
+  opacity: 0.3;
+  bottom: 0;
+  z-index: -1;
+}
+
+* {
+  font-family: $primary-font !important;
+}
+
+body {
+
+  .app-files {
+    #app-content {
+      &::before {
+        @include logo_background(35%);
+        position: fixed;
+      }
+
+      .summary {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  #content {
+    min-height: calc(100vh - 205px);
+  }
+
+  #content-wrapper {
+    footer {
+      p.info {
+        margin-top: 10px;
+        padding-top: 90px;
+        padding-bottom: 20px;
+
+        &::before {
+          @include logo_background(100%);
+          left: 20%;
+          z-index: auto;
+
+          @media screen and (max-width: 950px) {
+            left: 15%;
+          }
+
+          @media screen and (max-width: 800px) {
+            left: 5%;
+          }
+        }
+      }
+    }
+  }
+}

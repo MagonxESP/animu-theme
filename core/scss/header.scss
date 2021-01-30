@@ -1,0 +1,43 @@
+#header {
+
+  $height: 45px;
+
+  .logo {
+    background-image: $logo;
+    width: 300px;
+    height: 233px;
+    margin-bottom: -40px;
+    display: none;
+
+    @media only screen and (max-width: 1200px) {
+      display: block;
+    }
+  }
+
+  .logo-icon {
+    overflow: hidden;
+    background-image: $logo;
+    background-size: 4em;
+    background-position: 0 40%;
+    height: $height;
+    line-height: $height;
+    font-weight: 500;
+    padding-left: 70px;
+  }
+
+  #owncloud {
+    overflow: hidden;
+    opacity: .85;
+    padding: 0;
+  }
+
+  #expand:after {
+    border-color: rgba(255, 255, 255, 0.85) transparent transparent transparent;
+  }
+}
+
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+  background-color: $background-primary-color;
+}
