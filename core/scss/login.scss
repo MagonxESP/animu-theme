@@ -23,4 +23,15 @@
       margin-top: -120px;
     }
   }
+
+  .warning-info, .warning {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    word-break: break-word;
+  }
+
+  .warning {
+    width: 90%;
+  }
 }
